@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="百度" id='baidu'>
+	<input type="button" value="网易" id='wangyi'>
+	<input type="button" value="菜鸟" id='cainiao'>
+	<iframe src='' id="if" width="1200" height="800" frameborder="0">
+		对不起，网络错误，请检查网络
+	</iframe>
+
+	<script>
+		var baidu = document.getElementById('baidu');
+		var wangyi = document.getElementById('wangyi');
+		var cainiao = document.getElementById('cainiao');
+
+		var iframe = document.getElementById('if');
+
+		baidu.onclick = function() {
+			iframe.src = 'http://www.baidu.com';
+		}
+		wangyi.onclick = function() {
+			iframe.src = 'http://www.163.com';
+		}
+		cainiao.onclick = function() {
+			iframe.src = 'http://www.runoob.com/';
+		}
+		
+	</script>
+</body>
+</html>
